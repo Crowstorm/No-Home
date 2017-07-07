@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NoHome</title>
+	<link rel="stylesheet" type="text/css" href="css/one.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+
+</script>
+<script type="text/javascript" src="1.js"></script>
+</head>
+
+	<audio autoplay loop>
+	  <source src="wasteland.mp3" type="audio/mp3">
+	Your browser does not support the audio element.
+	</audio>
+
+<body>
+<!-- first screen -->
+	<div id="phrases">
+		<div class="phrases1">
+		  <p>Those who are lost</p>
+		  <p>often don't see the obvious way out</p>
+		</div>
+
+		<div class="phrases2">
+			<p>Misguided by madness</p>
+			<p>Twisted by time</p>
+		</div>
+
+		<div class="phrases3">
+			<p>Will they follow a guiding light</p>
+			<P>Or will the Guide succumb to darkness</P>
+		</div>
+
+		<a class="ghost-button" onclick="hide()">Enter</a>
+	</div>
+
+<!-- Second screen -->
+	<div id="interface1">
+		<p>The room</p>
+		<video width="250" height="240" controls>
+		  <source src="css/test.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video> 
+	</div>
+
+	<div id="beginning">
+		<div id="door" onclick="door()"></div>
+					<!-- Trigger/Open The Modal -->
+			<button id="myBtn">Tutorial I</button>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <!-- Modal content -->
+			  <div class="modal-content">
+			    <span class="close">&times;</span>
+			    <p>In order to travel to next locations you will need to click objects like doors or entrances.</p>
+			    <p>Sometimes some characters will talk to you automatically. Other times it will be up to you to interact with your enviroment</p>
+			    <p>If you see an interesting item you can try to pick  it up by clicking on it. Who knows, it may come in handy</p>
+			    <p>To use an item, click on it and then on desired object.</p>
+			    <p>Sometimes you may be asked to answer some questions or type in passwords to proceed. Type your answers into forms</p>
+			    <p>Dont give up when you're frustrated, answer may be simpler than you think. Sometimes you may find additional tips if you try long enough.</p>
+			  </div>
+			</div>
+
+	</div>
+
+<!-- third screen -->
+	<audio id="gunshot" src="css/gunshot.mp3"></audio>
+
+	<div id="wasteland">
+
+	</div>
+
+	<div id="interface2">
+		<p>Wastelands</p>
+		<div>
+			<video id="vid1" width="250" height="240" controls onclick="vid1()">
+			  <source src="css/test.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+		</div>
+
+		<div id="vid1_a">
+			<p>*Placeholder*Touch him(the video screen) for flashbacks</p>
+			<a class="ghost-button" href="#" onclick="gunshot.play(), talk1_a()">Flashback</a>
+
+		</div>
+
+		<div id="talk1_a">
+			<div id="talk1">
+				<form id="dead">
+					You are 
+					<input type="text" id="talk">
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+
+		<div id="travel1">
+			<a class="ghost-button" href="../dead/dead.html">Leave the Wastelands</a>
+		</div>
+	</div>
+
+	
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="1.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NoHome</title>
+	<link rel="stylesheet" type="text/css" href="css/dead.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+
+</head>
+<audio autoplay loop>
+	  <source src="prison.mp3" type="audio/mp3">
+	Your browser does not support the audio element.
+	</audio>
+<body>
+	
+<!-- Title screen -->
+<div id="phrases">
+		<div class="phrases1">
+		  <p>The most expected</p>
+		  <p>Happens unexpected</p>
+		</div>
+
+		<div class="phrases2">
+			<p>For some salvation</p>
+			<p>For some a curse</p>
+		</div>
+
+		<div class="phrases3">
+			<p>Who is he?</p>
+			<P>Who are you?</P>
+		</div>
+
+		<a class="ghost-button" onclick="enter()">Enter</a>
+	</div>
+
+<!-- First screen -->
+	<div id="interface">
+		<p id="level_title">PRISON</p>
+		<div id="dialogues">
+			JohnDoe
+			<video id="vid_entrance" width="250" height="240" controls>
+			  <source src="css/test.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video> 
+			<video id="vid_locked" width="250" height="240" controls>
+			  <source src="css/test.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video> 
+		</div>
+
+		<div id="inventory">
+			Inventory
+			<a class="ghost-button items" id="item_boltcutters" href="#">Boltcutters</a>
+		</div>
+
+	</div>
+
+	<div id="entrance">
+		<img id="up_entrance" src="css/1arrowup.png" onclick="locked()">
+		<img id="down_entrance" src="css/1arrowdown.png" onclick="corridor()">
+
+	</div>
+
+<!-- Second screen (lcoked doors) -->
+	<audio id="chainBroken" src="css/chain.mp3"></audio>
+	<div id="locked">
+		<div id='chain'>
+			
+		</div>
+
+		<img id="down_locked" src="css/1arrowdown.png" onclick="locked_down()">
+	
+
+		<div id='chained_door' onclick="door_locked()">
+			
+		</div>
+		
+	</div>
+
+<!-- Third screen (corridor) -->
+	<audio id="prisonDoor" src="css/prisonDoor.mp3"></audio>
+	<audio id="doorBack" src="css/doorBack.mp3"></audio>
+	<audio id="jammed" src="css/jammed.mp3"></audio>
+	<audio id="budge" src="css/budge.mp3"></audio>
+
+	<div id='corridor'>
+		
+		<img id="corridor_d" src="css/1arrowdown.png" onclick="corridor_down()">
+		
+		<div id="block_div" onclick="jammed.play(), lock_jammed()">
+			
+		</div>
+
+		<div id="beds_div" onclick="prisonDoor.play(), beds()">
+			
+		</div>
+
+		<div id="torture_div" onclick="prisonDoor.play(), torture_room()">
+		
+		</div>
+
+		<div id="wooden_door">
+			
+		</div>
+
+		<div id='hallway'></div>
+	</div>
+
+<!-- Torture Room -->
+	<audio id="tortureSound" src="css/tortures.mp3"></audio>
+	<div id='torture'>
+		<img id="down_torture" src="css/1arrowdown.png" onclick="doorBack.play(), torture_down()">
+
+		<div id="flashback">
+				
+		</div>
+	</div>
+
+<!-- Beds -->
+	<audio id="pickup" src="css/pickup.mp3"></audio>
+	<div id='beds'>
+		<img id="down_beds" src="css/1arrowdown.png" onclick="doorBack.play(), beds_down()">
+		<div id='boltcutters' onclick="pickup.play()">
+			
+		</div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="dead.js"></script>
+
+</body>
+</html>

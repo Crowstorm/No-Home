@@ -1,0 +1,93 @@
+body {
+	background: url("images/pipe2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+html {
+	height: 100%;
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 400%;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	color: black;
+}
+
+h2 {
+	font-family: 'Dancing Script', cursive;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#splash {
+	text-align: center;
+	padding-top: 25%;
+}
+
+#begin {
+	padding-top:10%;
+	text-align: center;
+}
+
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+
+
+.ghost-button {
+	font-family: 'Dancing Script', cursive;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 250%;
+	color: white;
+
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+/*  border: 2px solid #fff;
+*/  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 50ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: auto;
+  margin-top: 25%;
+  padding: 20px;
+  background: #d9edf7;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+/*  transition: all 1s ease-in-out;*/
+  text-align: center;
+}

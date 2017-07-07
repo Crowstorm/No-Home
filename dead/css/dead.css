@@ -1,0 +1,325 @@
+body {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+/*general*/
+#level_title{
+	  font-family: 'Dancing Script', cursive;
+	  font-size: 1.5em;
+}
+
+#interface {
+  width: 14%;
+  height: 100vh;
+  float: left;
+  outline:2px solid #AD9D23;
+  border: 3px solid #807100;
+}
+
+#dialogues {
+	width:100%;
+	height: 30%;
+}
+
+#inventory{
+	width:100%;
+	height: 30%;
+}
+
+.items{
+	margin: 3% auto;
+}
+
+/*arrows*/
+
+#up_entrance{
+	display: inline-block;
+	position: absolute;
+	top: 70%;
+    right: 46%;
+}
+
+#down_entrance {
+	display: inline-block;
+	position: absolute;
+	top: 85%;
+    right: 46%;
+}
+
+#down_locked {
+	display: inline-block;
+	position: absolute;
+	top: 85%;
+    right: 45%;
+}
+
+#down_beds {
+	    position: absolute;
+    top: 85%;
+    right: 45%;
+}
+
+#down_torture {
+	    position: absolute;
+    top: 91%;
+    right: 45%;
+}
+
+/*Screens*/
+
+#entrance {
+	position: relative;
+  height: 100vh;
+  width: 85%;
+  float:right;
+  background: url("1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*Locked doors room */
+
+#locked {
+  height: 100vh;
+  width: 85%;
+  float:right;
+  background: url("locked.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/*
+#locked_d{
+	position: absolute;
+	margin-top: 35%;
+	margin-left: 38%;
+	z-index: 1;}  /* note to self: works only with position atribute */
+
+
+#chain {
+	background-color: black;
+    opacity: 0;
+    width: 10%;
+    height: 12%;
+    position: absolute;
+    left: 54%;
+    top: 47%;
+    z-index: 1;
+}
+
+#chained_door{
+    background-color: red;
+    opacity: 0;
+    width: 25%;
+    height: 73%;
+    position: absolute;
+    left: 37%;
+    top: 11%;
+    z-index: 0;
+}
+
+
+
+#corridor_d{
+	display: inline-block;
+    position: absolute;
+    top: 85%;
+    right: 46%;
+}
+
+#corridor {
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float:right;
+  background: url("corridor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#torture {
+  height: 100vh;
+  width: 85%;
+  float:right;
+  background: url("torture2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#beds {
+  height: 100vh;
+  width: 85%;
+  float:right;
+  background: url("4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#boltcutters{
+	    display: inline-block;
+    background-color: black;
+    height: 11%;
+    width: 11%;
+    opacity: 0;
+    position: absolute;
+    top: 67%;
+    right: 40%;
+}
+
+#hallway{
+display: inline-block;
+    background-color: green;
+    height: 49%;
+    width: 23%;
+    opacity: 0;
+    position: absolute;
+    top: 24%;
+    right: 40%;
+}
+
+/*hidden divs corridor*/
+
+#beds_div{
+	display: inline-block;
+    background-color: black;
+    height: 45%;
+    width: 4%;
+    opacity: 0;
+    position: absolute;
+    top: 42%;
+    left: 64.5%;
+}
+
+#block_div{
+	display: inline-block;
+    background-color: black;
+    height: 33%;
+    width: 3%;
+    opacity: 0;
+    position: absolute;
+    top: 48%;
+    left: 60.5%;
+}
+
+#torture_div{
+	display: inline-block;
+    background-color: black;
+    height: 64%;
+    width: 11%;
+    opacity: 0;
+    position: absolute;
+    top: 34%;
+    left: 75%;
+}
+
+#wooden_door{
+	display: inline-block;
+	background-color: red;
+	opacity: 0;
+	height: 64%;
+    width: 7%;
+    position: absolute;
+    top: 27%;
+    right: 66%;
+}
+
+
+/*other*/
+
+#flashback{
+	display: inline-block;
+    background-color: black;
+    height: 45%;
+    width: 27%;
+    position: absolute;
+    top: 45%;
+    right: 35%;
+    opacity: 0;
+}
+
+/*general styling*/
+
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+}
+
+#phrases {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+}
+
+.phrases1{
+  animation: fadein 20s;
+   -moz-animation: fadein 20s; /* Firefox */
+    -webkit-animation: fadein 20s; /* Safari and Chrome */
+    -o-animation: fadein 20s; /* Opera */
+}
+
+.phrases2{
+  animation: fadein 30s;
+   -moz-animation: fadein 30s; /* Firefox */
+    -webkit-animation: fadein 30s; /* Safari and Chrome */
+    -o-animation: fadein 30s; /* Opera */
+}
+
+.phrases3{
+  animation: fadein 40s;
+   -moz-animation: fadein 40s; /* Firefox */
+    -webkit-animation: fadein 40s; /* Safari and Chrome */
+    -o-animation: fadein 40s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

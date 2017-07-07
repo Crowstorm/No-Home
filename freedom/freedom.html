@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NoHome</title>
+	<link rel="stylesheet" type="text/css" href="css/freedom.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+
+</head>
+<body>
+	<audio id="hospital" autoplay loop>
+	  <source src="css/hospital2.mp3" type="audio/mp3">
+	Your browser does not support the audio element.
+	</audio>
+
+	<audio id="budge" src="css/budge.mp3"></audio>
+	<!-- title screen -->
+	<div id="phrases">
+			<div class="phrases1">
+			  <p>Freedom comes at a price</p>
+			  <p>And can be payed with blood or truth</p>
+			</div>
+
+			<div class="phrases2">
+				<p>But it's not up to you to decide</p>
+				<p>Be ready</p>
+			</div>
+
+			<div class="phrases3">
+				<p>Open your eyes</p>
+				<P>Or open your veins</P>
+			</div>
+
+			<a class="ghost-button" onclick="enter()">Enter</a>
+		</div>
+
+	<!-- interface -->
+	<audio id="pickup" src="css/pickup.mp3"></audio>
+	<audio id="starring" src="css/starring.mp3"></audio>
+	<div id="interface">
+		<p id="level_title">Hospital</p>
+		<div id="dialogues">
+			JohnDoe
+			
+		</div>
+
+		<div id="inventory">
+			Inventory
+			<a class="ghost-button items" id="item_vhs" href="#">VHS Tape</a>
+			<a class="ghost-button items" id="item_knife" href="#">Knife</a>
+			<a class="ghost-button items" id="item_cassette" href="#">Cassette</a>
+			<a class="ghost-button items" id="item_player" href="#">Cassette Player</a>
+			<a class="ghost-button items" id="item_player_ready" href="#">Play Cassette Player</a>
+			<a class="ghost-button items" id="item_rope" href="#">Rope</a>
+			<a class="ghost-button items" id="item_poem" href="#">Poem</a>
+		</div>
+
+	</div>
+
+	<!-- Entrance -->
+	<div id="entrance">
+		<div id="stairs_down">
+			
+		</div>
+
+		<div id="entrance_door">
+			
+		</div>
+	</div>
+
+	<!-- Post Entrance -->
+	<div id="post_entrance">
+		<img id="post_d" src="css/down.png">
+		<div id="post_door">
+			
+		</div>
+	</div>
+
+	<!-- tv room -->
+	<div id="tv_room">
+		<img id="tv_d" src="css/down.png">
+		<div id="tv"></div>
+	</div>
+
+	<!-- Escape Corridor -->
+	<div id="escape_corridor">
+		<img id="escape_corridor_d" src="css/down.png">
+		<div id="escape_door">
+			
+		</div>
+	</div>
+
+	<!-- Lock room -->
+	<div id="lock_room">
+		<img id="lock_room_d" src="css/down.png">
+		<div id='keypad_div'>
+		</div>
+
+		<div id='door1'></div>
+		<div id='door2'></div>
+	</div>
+
+
+	<!-- Keypad -->
+	<div id="keypad_container">
+		<img id="keypad_d" src="css/down.png">
+		<div id="keypad">
+ 			<input type='text' id='display' placeholder='Enter Code' maxlength='4'>
+   			<div id='keys'>
+      			<div class='row'>
+       				<button class="numbers">1</button>
+       				<button class="numbers">2</button>
+               		 <button class="numbers">3</button>
+      			</div>
+		    	<div class='row'>
+		       	 <button class="numbers">4</button>
+		       	 <button class="numbers">5</button>
+		       	 <button class="numbers">6</button>
+		    	</div>
+		    	<div class='row'>
+		       	 <button class="numbers">7</button>
+		       	 <button class="numbers">8</button>
+		      	  <button class="numbers">9</button>
+		   		 </div>
+			    <div class='row'>
+		       	 <button id='reset'>RES</button>
+		      	 <button class="numbers">0</button>
+		      	 <button id='cry'>Back</button>
+		    	</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Elevator -->
+
+	<div id='elevator'>
+		<img id="elevator_d" src="css/down.png">
+		<div id='cave'></div>
+		<div id='palm'></div>
+	</div>
+
+	<!-- First corridor -->
+	<div id="first_corridor">
+		<img id="first_corridor_d" src="css/down.png">
+		<div id="first_corridor_door">
+
+		</div>
+		<div id="first_corridor_hallway">
+			
+		</div>
+	</div>
+
+	<!-- Hallway corridor -->
+	<div id="hallway_corridor">
+		<img id="hallway_corridor_d" src="css/down.png">
+		<img id="hallway_corridor_r" src="css/right.png">
+		<img id="hallway_corridor_l" src="css/left.png">
+		<div id="hallway_corridor_door"></div>
+		<div id="hallway_corridor_stairs"></div>
+	</div>
+
+	<!-- Hallway left -->
+	<div id="hallway_left">
+		<img id="hallway_left_d" src="css/down.png">
+		<div id="left_left">
+			
+		</div>
+		<div id="left_front">
+			
+		</div>
+	</div>
+
+	<!-- Split -->
+	<div id="split">
+		<img id="split_d" src="css/down.png">
+		<div id="cassette"></div>
+		<div id="knife"></div>
+	</div>
+
+	<!-- Wall -->
+	<div id="wall">
+		<img id="wall_d" src="css/down.png">
+		<img class="fadesix" id="six" src="css/6.png">
+		<img id="wall_r" src="css/right.png">
+	</div>
+
+	<!-- Big Room -->
+	<audio id="stopit" src="css/stopit.mp3"></audio>
+
+	<div id="big_room">
+		<img id="big_room_d" src="css/down.png">
+		<div id="big_left_door">
+		</div>
+		<div id="big_right_door">
+		</div>
+		<div id="face"></div>
+		<div id='cable'></div>
+	</div>
+
+	<!-- Operating Room -->
+	<audio id="samanthadeath" src="css/samanthadeath.mp3"></audio>
+
+	<div id="operating_room">
+		<img id="operating_room_d" src="css/down.png">
+		<div id="operation"></div>
+	</div>
+
+	<!-- Morgue -->
+	<audio id="screamSound" src="css/scream.mp3"></audio>
+	<div id='morgue'>
+		<img id="morgue_d" src="css/down.png">
+		<div id="with_body"></div>
+		<div id="empty"></div>
+		<div id="scream"></div>
+	</div>
+
+	<div id="dead">
+		<img id="dead_d" src="css/down.png">
+	</div>
+
+	<!-- hallway right -->
+	<div id="hallway_right">
+		<img id="hallway_right_d" src="css/down.png">
+		<div id="double_door">
+			
+		</div>
+		<div id="right_door">
+			
+		</div>	
+	</div>
+
+	<!-- Death -->
+	<div id="death">
+		<img id="death_d" src="css/down.png">
+		<div id="bed"></div>
+	</div>
+
+	<!-- Children -->
+	<div id="children">
+		<img id="children_d" src="css/down.png">
+		<div id="player">
+		</div>
+		<div id="poems"></div>	
+		<div id="bunny"></div>
+	</div>
+
+	<!-- Upstairs -->
+	<div id="upstairs">
+		<img id="upstairs_d" src="css/down.png">
+		<div id='to_vhs'>
+			
+		</div>
+		<div id='to_bathroom'>
+			
+		</div>
+	</div>
+
+	<!-- VHS Room -->
+	<div id='vhs_room'>
+		<img id="vhs_d" src="css/down.png">
+		<div id="vhs">
+			
+		</div>
+	</div>
+
+	<!-- Bathroom -->
+	<div id="bathroom">
+		<img id="bathroom_d" src="css/down.png">
+		<div id="rope"></div>
+	</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		crossorigin="anonymous">
+</script>
+
+<script type="text/javascript" src="freedom.js"></script>
+</body>
+</html>

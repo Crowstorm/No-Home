@@ -1,0 +1,994 @@
+
+/*interface*/
+#interface{
+  width: 14%;
+  height: 100vh;
+  float: left;
+  outline:2px solid #AD9D23;
+  border: 3px solid #807100;
+}
+
+#dialogues {
+  width:100%;
+  height: 30%;
+}
+
+#inventory{
+  width:100%;
+  height: 30%;
+}
+
+/*locations*/
+
+/*entrance*/
+#entrance {
+  background-image: url("entrance.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float:right;
+}
+
+#stairs_down{
+  background-color: black;
+    opacity: 0;
+    height: 32%;
+    width: 80%;
+    display: inline-block;
+    position: absolute;
+    top: 69%;
+    left: 16%;
+}
+
+#entrance_door{
+ background-color: black;
+    opacity: 0;
+    height: 48%;
+    width: 26%;
+    display: inline-block;
+    position: absolute;
+    top: 16%;
+    left: 27%;
+}
+
+/*first corridor*/
+
+#first_corridor{
+  background-image: url("first_corridor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float:right;
+}
+
+#first_corridor_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#first_corridor_door{
+    display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 47%;
+    width: 23%;
+    position: absolute;
+    top: 38%;
+    right: 60%;
+}
+
+#first_corridor_hallway{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 68%;
+    width: 25%;
+    position: absolute;
+    top: 15%;
+    right: 12%;
+}
+
+/*TV ROOM*/
+#tv_room{
+  background-image: url("tv.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#tv_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#tv{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 22%;
+    width: 18%;
+    position: absolute;
+    top: 42%;
+    right: 45%;
+}
+
+/*Hallway corridor*/
+#hallway_corridor{
+  background-image: url("hallway_corridor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#hallway_corridor_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#hallway_corridor_r{
+  position: absolute;
+  top:85%;
+  left:85%;
+}
+
+#hallway_corridor_l{
+  position: absolute;
+  top:85%;
+  left:7%;
+}
+
+#hallway_corridor_door{
+display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 37%;
+    width: 14%;
+    position: absolute;
+    top: 39%;
+    right: 40%;
+}
+
+#hallway_corridor_stairs{
+       display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 68%;
+    width: 31%;
+    position: absolute;
+    top: 9%;
+    right: 59%;
+}
+
+/*hallway left*/
+
+#hallway_left{
+  background-image: url('aaa2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#hallway_left_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#left_left{
+display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 58%;
+    width: 23%;
+    position: absolute;
+    top: 26%;
+    right: 56%;
+}
+
+#left_front{
+display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 58%;
+    width: 31%;
+    position: absolute;
+    top: 16%;
+    right: 23%;
+}
+/*Split*/
+
+#split{
+  background-image: url("split.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#split_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#cassette{
+    display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 53%;
+    width: 21%;
+    position: absolute;
+    top: 16%;
+    right: 56%;
+}
+
+#knife{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 57%;
+    width: 30%;
+    position: absolute;
+    top: 34%;
+    right: 3%;
+}
+
+/*Wall*/
+
+#wall{
+  background-image: url("wall1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#wall_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#six{
+  position: absolute;
+  top: 35%;
+  left: 23%;;
+}
+
+#wall_r{
+  position: absolute;
+  top:85%;
+  left:85%;
+}
+
+/*Big Room*/
+
+#big_room{
+  background-image: url("bigroom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#big_room_d{
+    position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#big_right_door{
+  display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 28%;
+    width: 14%;
+    position: absolute;
+    top: 48%;
+    right: 34%;
+}
+
+
+#big_left_door{
+     display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 29%;
+    width: 14%;
+    position: absolute;
+    top: 47%;
+    right: 48%;
+}
+
+#face{
+    display: inline-block;
+    background-color: blue;
+    opacity: 0;
+    height: 29%;
+    width: 14%;
+    position: absolute;
+    top: 47%;
+    right: 62%;
+}
+
+#cable{
+    display: inline-block;
+    background-color: green;
+    opacity: 0;
+    height: 46%;
+    width: 14%;
+    position: absolute;
+    top: 0%;
+    right: 42%;
+}
+
+/*Operating Room*/
+
+#operating_room{
+  background-image: url("operatingRoom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#operating_room_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#operation{
+    display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 55%;
+    width: 35%;
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    z-index: 0;
+}
+
+/*Morgue*/
+
+#morgue{
+  background-image: url("morgue.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#morgue_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#with_body{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 24%;
+    width: 27%;
+    position: absolute;
+    top: 54%;
+    right: 59%;
+}
+
+#empty{
+display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 51%;
+    width: 26%;
+    position: absolute;
+    top: 33%;
+    right: 9%;
+}
+
+#scream{
+    display: inline-block;
+    background-color: blue;
+    opacity: 0;
+    height: 23%;
+    width: 27%;
+    position: absolute;
+    top: 32%;
+    right: 58%;
+}
+/*dead*/
+
+#dead{
+  background-image: url("body.jpg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#dead_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+/*hallway right*/
+
+#hallway_right{
+  background-image: url("right.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#hallway_right_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#double_door{
+    display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 41%;
+    width: 24%;
+    position: absolute;
+    top: 37%;
+    right: 38%;
+}
+
+#right_door{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 53%;
+    width: 18%;
+    position: absolute;
+    top: 29%;
+    right: 18%;
+}
+
+/*Death*/
+#death{
+  background-image: url("death.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#death_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+  z-index: 1;
+}
+
+#bed{
+    display: inline-block;
+    background-color: black;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 0;
+}
+
+/*Children*/
+#children{
+  background-image: url("children2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#children_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#player{
+    display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 20%;
+    width: 14%;
+    position: absolute;
+    top: 43%;
+    right: 27%;
+}
+
+#poems{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 20%;
+    width: 17%;
+    position: absolute;
+    top: 55%;
+    right: 54%;
+}
+
+#bunny{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 17%;
+    width: 14%;
+    position: absolute;
+    top: 22%;
+    right: 20%;
+}
+
+/*upstairs*/
+
+#upstairs{
+  background-image: url("upstairs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#upstairs_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#to_vhs{
+    display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 55%;
+    width: 31%;
+    position: absolute;
+    top: 19%;
+    right: 0%;
+}
+
+#to_bathroom{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 41%;
+    width: 24%;
+    position: absolute;
+    top: 32%;
+    right: 76%;
+}
+
+/*VHS Room*/
+#vhs_room{
+  background-image: url("vhsroom2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#vhs_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#vhs{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 21%;
+    width: 22%;
+    position: absolute;
+    top: 57%;
+    right: 23%;
+}
+
+/*Bathroom*/
+#bathroom{
+  background-image: url("bathroom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#bathroom_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#rope{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 49%;
+    width: 22%;
+    position: absolute;
+    top: 20%;
+    right: 26%;
+}
+
+/*post entrance*/
+#post_entrance{
+  background-image: url("post_entrance.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#post_d{
+  position: absolute;
+  top:85%;
+  left:47%;
+}
+
+#post_door{
+  display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 41%;
+    width: 19%;
+    position: absolute;
+    top: 32%;
+    right: 34%;
+}
+
+
+/*Escape corridor*/
+#escape_corridor{
+  background-image: url("escape_corridor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float:right;
+}
+
+#escape_corridor_d{
+  position: absolute;
+  top: 85%;
+  left: 47%;
+}
+
+#escape_door{
+  display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 44%;
+    width: 21%;
+    position: absolute;
+    top: 24%;
+    left: 41%;
+}
+
+/*Lock Room*/
+#lock_room{
+  background-image: url("lockroom2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#lock_room_d{
+  position: absolute;
+  top: 85%;
+  left: 47%;
+}
+
+#keypad_div{
+    display: inline-block;
+    background-color: black;
+    opacity: 0;
+    height: 20%;
+    width: 12%;
+    position: absolute;
+    top: 36%;
+    left: 45%;
+}
+
+#door1{
+    display: inline-block;
+    background-color: blue;
+    opacity: 0;
+    height: 64%;
+    width: 37%;
+    position: absolute;
+    top: 16%;
+    left: 7%;
+}
+
+#door2{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 64%;
+    width: 37%;
+    position: absolute;
+    top: 16%;
+    left: 7%;
+}
+
+/*keypad*/
+#keypad_d{
+  position: absolute;
+  top: 85%;
+  left: 47%;
+  z-index:99;
+}
+
+#keypad_container{
+  background-image: url("lockroom2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+  z-index:0;
+}
+
+#keypad{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: solid thin black;
+    padding: 5px;
+    max-width: 460px;
+    max-height: 660px;
+    background-image: url(tekstura1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: absolute;
+    top: 16%;
+    right: 33%;
+    left:34%;
+    z-index:1;
+}
+
+#display{
+  border-radius: 10px;
+  font-size: 25pt;
+  font-family: Iceland;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+  color: red;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #222;
+  border: 3px solid black;
+  padding: 3px;
+/*-webkit-box-shadow: -1px 3px 6px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 6px 9px rgba(0,0,0,0.75);
+box-shadow: -1px 3px 6px 9px rgba(0,0,0,0.75);*/
+}
+
+ button{
+  background-image: url('http://i.imgur.com/6k7DXZP.png');
+  margin: 2px;
+  height: 120px;
+  font-size: 20pt;
+  width: 120px;
+  cursor: pointer;
+-webkit-box-shadow: 3px 1px 3px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 1px 3px 1px rgba(0,0,0,0.75);
+box-shadow: 3px 1px 3px 1px rgba(0,0,0,0.75);
+  padding: 1px;
+  border-radius: 20px;
+  min-height: 30px;
+  min-width: 30px;
+}
+
+/*Elevator*/
+#elevator{
+  background-image: url("elevator.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 85%;
+  float: right;
+}
+
+#elevator_d{
+  position: absolute;
+  top: 85%;
+  left: 47%;
+  z-index: 2;
+}
+
+#cave{
+    display: inline-block;
+    background-color: red;
+    opacity: 0;
+    height: 74%;
+    width: 37%;
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    z-index: 1;
+}
+
+#palm{
+    display: inline-block;
+    background-color: blue;
+    opacity: 0;
+    height: 16%;
+    width: 14%;
+    position: absolute;
+    top: 25%;
+    left: 61%;
+    z-index: 0;
+}
+
+
+/*general styling*/
+
+body {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+}
+
+#phrases {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+}
+
+.phrases1{
+  animation: fadein 20s;
+   -moz-animation: fadein 20s; /* Firefox */
+    -webkit-animation: fadein 20s; /* Safari and Chrome */
+    -o-animation: fadein 20s; /* Opera */
+}
+
+.phrases2{
+  animation: fadein 30s;
+   -moz-animation: fadein 30s; /* Firefox */
+    -webkit-animation: fadein 30s; /* Safari and Chrome */
+    -o-animation: fadein 30s; /* Opera */
+}
+
+.phrases3{
+  animation: fadein 40s;
+   -moz-animation: fadein 40s; /* Firefox */
+    -webkit-animation: fadein 40s; /* Safari and Chrome */
+    -o-animation: fadein 40s; /* Opera */
+}
+
+.fadesix{
+    animation: fadein 40s;
+   -moz-animation: fadein 40s; /* Firefox */
+    -webkit-animation: fadein 40s; /* Safari and Chrome */
+    -o-animation: fadein 40s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
