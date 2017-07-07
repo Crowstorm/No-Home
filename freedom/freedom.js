@@ -51,6 +51,8 @@ dead.style.display = "none";
 
 
 //Invetory
+
+//Possible improvment - appendChild
 var vhs = document.getElementById('item_vhs');
 vhs.style.display = "none";
 var knife = document.getElementById('item_knife');
@@ -227,6 +229,7 @@ window.onclick = function (e) {
     if(knife_used == true && last_clicked_knife !== document.getElementById("rope") && count_knife >1){
 			alert("Can't use it here");
 			knife_used = false;
+			// Note for the future - when item is used and then fails JS overwrites the :hover of buttons. Possible fix - change convention and instead of changing ids modify button class. Needs testing
 			document.getElementById('item_knife').style.color = "white";
 			document.getElementById('item_knife').style.border = "1px solid white";
 			count_knife=0;
@@ -265,6 +268,11 @@ window.onclick = function (e) {
 //travel mechanics
 
 // title screen
+
+document.getElementById('title-button').onmousedown = function(){
+	enter();
+}
+
 function enter(){
 	phrases.style.display = "none";
 	entrance.style.display = "block";
