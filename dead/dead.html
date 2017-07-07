@@ -29,7 +29,7 @@
 			<P>Who are you?</P>
 		</div>
 
-		<a class="ghost-button" onclick="enter()">Enter</a>
+		<a  id="title-button" class="ghost-button">Enter</a>
 	</div>
 
 <!-- First screen -->
@@ -37,14 +37,15 @@
 		<p id="level_title">PRISON</p>
 		<div id="dialogues">
 			JohnDoe
-			<video id="vid_entrance" width="250" height="240" controls>
+			<!-- Add after videos -->
+<!-- 			<video id="vid_entrance" width="250" height="240" controls>
 			  <source src="css/test.mp4" type="video/mp4">
 			Your browser does not support the video tag.
-			</video> 
-			<video id="vid_locked" width="250" height="240" controls>
+			</video>  -->
+<!-- 			<video id="vid_locked" width="250" height="240" controls>
 			  <source src="css/test.mp4" type="video/mp4">
 			Your browser does not support the video tag.
-		</video> 
+			</video>  -->
 		</div>
 
 		<div id="inventory">
@@ -55,8 +56,8 @@
 	</div>
 
 	<div id="entrance">
-		<img id="up_entrance" src="css/1arrowup.png" onclick="locked()">
-		<img id="down_entrance" src="css/1arrowdown.png" onclick="corridor()">
+		<img id="up_entrance" src="css/1arrowup.png">
+		<img id="down_entrance" src="css/1arrowdown.png">
 
 	</div>
 
@@ -67,10 +68,10 @@
 			
 		</div>
 
-		<img id="down_locked" src="css/1arrowdown.png" onclick="locked_down()">
+		<img id="down_locked" src="css/1arrowdown.png">
 	
 
-		<div id='chained_door' onclick="door_locked()">
+		<div id='chained_door'>
 			
 		</div>
 		
@@ -84,17 +85,17 @@
 
 	<div id='corridor'>
 		
-		<img id="corridor_d" src="css/1arrowdown.png" onclick="corridor_down()">
+		<img id="corridor_d" src="css/1arrowdown.png">
 		
-		<div id="block_div" onclick="jammed.play(), lock_jammed()">
+		<div id="block_div">
 			
 		</div>
 
-		<div id="beds_div" onclick="prisonDoor.play(), beds()">
+		<div id="beds_div">
 			
 		</div>
 
-		<div id="torture_div" onclick="prisonDoor.play(), torture_room()">
+		<div id="torture_div">
 		
 		</div>
 
@@ -108,7 +109,7 @@
 <!-- Torture Room -->
 	<audio id="tortureSound" src="css/tortures.mp3"></audio>
 	<div id='torture'>
-		<img id="down_torture" src="css/1arrowdown.png" onclick="doorBack.play(), torture_down()">
+		<img id="down_torture" src="css/1arrowdown.png">
 
 		<div id="flashback">
 				
@@ -118,8 +119,8 @@
 <!-- Beds -->
 	<audio id="pickup" src="css/pickup.mp3"></audio>
 	<div id='beds'>
-		<img id="down_beds" src="css/1arrowdown.png" onclick="doorBack.play(), beds_down()">
-		<div id='boltcutters' onclick="pickup.play()">
+		<img id="down_beds" src="css/1arrowdown.png">
+		<div id='boltcutters'>
 			
 		</div>
 	</div>
