@@ -285,11 +285,12 @@ display: inline-block;
   position: absolute;
   top:85%;
   left:47%;
+  z-index: 100;
 }
 
 #six{
   position: absolute;
-  top: 35%;
+  top: 18%;
   left: 23%;;
 }
 
